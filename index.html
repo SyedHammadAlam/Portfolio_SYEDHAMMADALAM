@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Hammad Alam - Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="three-elements.js"></script>
+</head>
+<body>
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SHA</span>
+                <div class="logo-glow"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-text">Available for freelance</span>
+                    <div class="badge-dot"></div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Full-Stack</span>
+                    <span class="title-line gradient-text">Developer</span>
+                </h1>
+                <p class="hero-subtitle">Crafting premium digital experiences with cutting-edge technology and artistic vision</p>
+                <div class="hero-buttons">
+                    <button  class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="./logo.jpg" alt="Syed Hammad Alam">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-card card-1">
+                        <i class="fab fa-react"></i>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fab fa-js-square"></i>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fab fa-node-js"></i>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="floating-card card-4">
+                        <i class="fab fa-python"></i>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Passionate about creating <span class="gradient-text">meaningful experiences</span></h2>
+                <p class="section-subtitle">Combining technical expertise with creative vision to bring ideas to life</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-content">
+                        <p class="lead-text">I'm a full-stack developer with over 1+ years of experience in crafting beautiful, functional, and user-centered digital experiences.</p>
+                        <p>My passion lies in the intersection of technology and design, where I transform complex problems into elegant solutions. I believe that great software should not only work flawlessly but also inspire and delight users.</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or capturing moments through photography.</p>
+                    </div>
+                    <div class="expertise-grid">
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Website Development</h4>
+                            <p>End-to-end web applications</p>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Content Creation</h4>
+                            <p>From Ideas to Impactful Posts </p>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>User-centered design solutions</p>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>Digital Marketing</h4>
+                            <p>Fast and scalable Brand optimization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image">
+                        <img src="./Workplace.jpg" alt="Workspace">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="card-content">
+                            <h3>1+ Years</h3>
+                            <p>Professional Experience</p>
+                            <div class="card-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills & Expertise</span>
+                <h2 class="section-title">Technologies I <span class="gradient-text">master</span></h2>
+                <p class="section-subtitle">A comprehensive toolkit for building exceptional digital experiences</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React & Next.js</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js & Express</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python </span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Tools & DevOps</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of my recent work and creative solutions</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="./assets/TESLA/tesla.png" alt="Tesla Clone Replica">
+                        <img src="./assets/TESLA/tesla1.png" alt="Tesla Clone Replica1">
+                        <img src="./assets/TESLA/tesla2.png" alt="Tesla Clone Replica2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SyedHammadAlam/Tesla_Clone" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-tag">Featured</span>
+                            <h3 class="project-title">Premium Replica Tesla Cars Website</h3>
+                        </div>
+                        <p class="project-description">The Tesla Clone Website is a front-end web project designed to replicate the modern, sleek UI/UX of the official Tesla.com website. Built using React.js  , this clone aims to showcase responsive design, reusable components, smooth animations, and a clean layout structure.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">99%</span>
+                                <span class="stat-label">Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Real Estate/RE1.png" alt="Real Estate">
+                        <img src="./assets/Real Estate/RE2.png" alt="Real Estate">
+                        <img src="./assets/Real Estate/RE3.png" alt="Real Estate">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SyedHammadAlam/RealEstate_Web" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Real Estate Website</h3>
+                        <p class="project-description">Real Estate Website for USA Clients</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/buzzfluence/buzzflence.png" alt="BuzzFluence AI Agent">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SyedHammadAlam/BuzzFLuence_Website_AIAgents" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI - BuzzFluence Digital Marketing</h3>
+                        <p class="project-description">Build an AI based Digital Marketing Agency Website that interacts with the clients and store their requirements and send to the users </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/zameel/CH.png" alt="Chess Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SyedHammadAlam/Creative_AI_ChessGame" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Creative_AI_ChessGame</h3>
+                        <p class="project-description">This project is a custom-built Chess game developed in Python, featuring both standard chess mechanics and enhanced AI capabilities using the Minimax algorithm with a heuristic evaluation function.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/zameel/z1.jpg" alt="Zameel Foods">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://zameelfood.com/" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Zameel Foods</h3>
+                        <p class="project-description">A Rice website build on <bold>WordPress</bold> delivered to a Bengoli Client </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">Backend Integrationn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/zameel/AR.png" alt="Attitude Retail">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://attituderetail.com/" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Attitude Retail</h3>
+                        <p class="project-description"> Designed for a new generation that values authenticity and edge, Brand Attitude Apparel offers trend-forward collections featuring minimalist designs, bold typography, and comfort-first fits. From everyday essentials to statement pieces, each product is crafted to reflect the unapologetic attitude of its wearer.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">CMS Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's create something <span class="gradient-text">amazing</span> together</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's discuss your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>hammadalam37@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+92 3002321249 </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Karachi , Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h4>Follow me</h4>
+                        <div class="social-links">
+                            <a href="www.linkedin.com/in/syed-hammad-alam-672830277" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/SyedHammadAlam" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>I'll get back to you within 24 hours</p>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">SHA</span>
+                    </div>
+                    <p>Crafting digital experiences with passion and precision.</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2023 Syed Hammad Alam. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
